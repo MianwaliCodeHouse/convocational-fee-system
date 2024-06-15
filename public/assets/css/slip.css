@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.fullpage{
+    display: flex;
+    padding-bottom: 40px;
+}
+.slip_section{
+    width: 33.33%;
+    padding: 0 20px;
+}
+.head_section{
+    height: 200px;
+    display: flex;
+}
+
+.logo_sect{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    gap: 30px;
+}
+
+.logo_sect .umwlogo, .logo_sect .boplogo{
+    width: 50px;
+}
+
+.account_sect{
+    margin-top: 10px;
+    height: 130px;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.account_sect h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.account_sect span {
+    font-weight: 500;
+}
+
+.stud_info_sect{
+    width: 100%;
+}
+
+.form_info{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.input_sect{
+    width: 100%;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.inputs{
+    width: 67%;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding: 5px;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+
+.fees_sect{
+    display: flex;
+}
+.fees_type_sect{
+    width: 80%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+.fees_amount{
+    width: 20%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+.total{
+    border: 1px solid rgb(63, 63, 63);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}

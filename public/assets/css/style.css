@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+#main {
+    width: 100%;
+}
+
+/* reuseable class */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* header */
+.header {
+    width: 100%;
+    background-color: #131850;
+    color: #fff;
+    padding: 14px;
+    text-align: center;
+}
+
+.h_heading{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* section */
+
+.section {
+    max-width: 70%;
+    background: #f3eeee;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 50px 25px;
+    border-radius: 5px;
+}
+
+/* Login Form */
+.reg_login {
+    width: 50%;
+    background-color: #fff;
+    margin: 0px auto;
+    padding: 30px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+}
+
+.reg_login .input_box {
+    width: 100%;
+}
+
+.reg_login .log_button {
+    width: 100%;
+    background-color: blue;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reg_login .forget {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.register_link {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    animation:  fadeEfect 1s infinite linear;
+}
+
+@keyframes fadeEfect {
+    50%{
+        opacity: 0;
+    }
+}
+
+/* Instruction */
+
+.instruction {
+    padding: 0px 20px;
+    padding-bottom: 50px;
+}
+
+.instruction .ins_heading {
+    margin-bottom: 10px;
+}
+
+.instruction .inst_lists {
+    margin-left: 30px;
+}
+
+.inst_lists .inst_s_list::marker {
+    font-weight: 600;
+}
+
+
+/* CSS for main container */
+
+.main_container {
+    width: 600px;
+    background: #f3eeee;
+    border-radius: 5px;
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, .2); */
+    padding: 30px;
+    margin: 50px auto;
+}
+
+.sign_heading {
+    font-size: 1.3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.sign_heading::before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 165, 0,.7);
+    top: 18px;
+    width: 170px;
+    height: 5px;
+    z-index: -1;
+}
+
+/* CSS for Form section */
+
+.form {
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* CSS for Input_container */
+.input_container {
+    display: flex;
+    align-items: center;
+}
+
+.input_box {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-bottom: 15px;
+}
+
+.margin {
+    margin-right: 40px;
+}
+
+/* CSS For Label */
+
+label {
+    font-size: .9rem;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+/* CSS for Whole Input Field */
+
+.input {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 8px 10px;
+    /* box-shadow: 1px 1px 10px #fff; */
+    border-radius: 5px;
+}
+
+.input:focus {
+    outline: 1px solid #ccc;
+}
+
+.no_input .input {
+    width: 70%;
+}
+
+.no_input button {
+    width: 30%;
+    background: blue;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 0;
+    height: 32px;
+    border-radius: 3px;
+}
+
+/* CSS For Gender */
+
+.gender span {
+    font-size: .9rem;
+    margin-right: 30px;
+}
+
+.gender input[type=radio] {
+    accent-color: blue;
+}
+/* CSS For button */
+
+.button {
+    width: 120px;
+    margin-top: 20px;
+    background: #0000ff;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 32px;
+    opacity: .9;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button:hover {
+    opacity: .7;
+}
+
+label span {
+    color: red;
+  }
+
+/* ------------------CSS For Dashboard */
+
+.deshboard_section {
+    padding: 20px 25px;
+    width: 50%;
+}
+
+.form-group .text {
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.step_form_heading {
+    padding-bottom: 20px;
+}
+
+.form-step {
+    display: none;
+}
+.form-step.active {
+    display: block;
+}
+
+.guest_form {
+    margin-top: 30px;
+}
+
+.next_button {
+    margin-top: 20px;
+    background: blue;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 28px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Slip generated container */
+.slip_div {
+    width: 90%;
+    background: #fafafa;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    display: none;
+    border-radius: 8px;
+    padding: 20px 20px;
+    margin: 40px 0;
+}
+
+.slip_div.active {
+    display: block;
+}
+
+.download {
+    background: blue;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding: 8px 28px;
+    font-size: 16px;
+    border-radius: 4px;
+    float: right;
+    cursor: pointer;
+}
+
+.fee_container {
+    margin-top: 100px;
+}
+
+/* Submit Slip Page */
+
+.distinguish {
+    margin: 20px 0px;
+}
+
+.distinguish p {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.distanguish_select {
+    display: none;
+}
+
+.distanguish_select.active {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 991px) {
+    .deshboard_section {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+ .section {
+    max-width: 90%;
+ }
+
+ .deshboard_section {
+    width: 90%;
+}
+}
+
+@media screen and (max-width: 450px) {
+    .h_heading {
+        font-size: 1.3rem;
+    }
+
+    .section {
+        max-width: 100%;
+        border-radius: 3px;
+        padding: 30px 15px;
+        margin-top: 30px;
+    }
+
+    .instruction {
+        padding: 40px 0px;
+    }
+
+    .instruction .inst_lists {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+    .reg_login {
+        width: 100%;
+    }
+
+    .main_container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .sign_heading {
+        text-align: center;
+    }
+
+    .input_container {
+        flex-wrap: wrap;
+    }
+
+    .input_box {
+        width: 100%;
+    }
+
+    .margin {
+        margin-right: 0;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    /* Deshboard Page */
+    .deshboard_section {
+        width: 100%;
+    }
+}
